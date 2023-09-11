@@ -25,7 +25,7 @@ stopBtn.addEventListener('click', onStopBtnClick => {
   clearInterval(timerId);
   stopBtn.disabled = true;
   start.disabled = false;
-  console.log(disabled);
+
 })
 
 

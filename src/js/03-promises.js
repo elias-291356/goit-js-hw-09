@@ -27,7 +27,7 @@ refs.formEl.addEventListener('submit', event => {
   const step = Number(refs.formEl.elements.step.value);
   const amount = Number(refs.formEl.elements.amount.value);
   for (let i = 0; i < amount; i += 1) {
-    createPromise(i, delay)
+    createPromise(i + 1, delay)
       .then(({ position, delay }) => {
         Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`);
       })
